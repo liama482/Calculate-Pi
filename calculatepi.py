@@ -1,8 +1,8 @@
 """
 calculatepi.py
-Author: <your name here>
-Credit: <list sources used, if any>
-Assignment:
+Author: Liam Abbate
+Credit: https://github.com/HHS-IntroProgramming/Calculate-Pi/blob/master/README.md
+Assignment: Find the meaning of wub, using pi.
 
 Write and submit a Python program that computes an approximate value of π by calculating the following sum:
 
@@ -21,3 +21,10 @@ The approximate value of pi is 3.1315929
 Note: remember that the printed value of pi will be an estimate!
 
 """
+import math
+print("wub! wub, wub!")
+n = int(input("I will estimate π. How many terms should I use? "))
+decimals = int(input("How many decimal places should I use in the result? "))
+π = 4*{1.0/sum([((-1.0)**k)/(2*k+1) for k in range(0,n)])}
+print("The approximate value of π is {0}".format(round(e, decimals)))
+print("(The true value of π is {0})".format(round(math.e, decimals)))
